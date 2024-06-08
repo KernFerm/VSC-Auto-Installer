@@ -12,8 +12,6 @@ This guide will help you understand how to use the `VisualStudioCode+Auto-Setup(
 - [64-Bit-Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/PowerShell-7.4.2-win-x64.msi)
 - [32-Bit-Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/PowerShell-7.4.2-win-x86.msi)
 
-# v7.5.0-preview.3 Release of PowerShell Notes
- - [PowerShell-PreRelease-Notes](https://github.com/PowerShell/PowerShell/releases/tag/v7.5.0-preview.3)
 
 ## Steps
 
