@@ -8,6 +8,7 @@ This guide will help you understand how to use the `VisualStudioCode+Auto-Setup(
 - `Both` MSI are from the official github page of [Official-PowerShell-Github](https://github.com/PowerShell)
 
 # v7.4.2 Release of PowerShell - Latest (recommended)
+      choose your recommended pc specs either 32bit or 64bit 
 
 - [64-Bit-Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/PowerShell-7.4.2-win-x64.msi)
 - [32-Bit-Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/PowerShell-7.4.2-win-x86.msi)
