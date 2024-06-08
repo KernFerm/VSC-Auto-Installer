@@ -1,4 +1,4 @@
-# Extensions for Visual Studio Code
+# Extensions for Visual Studio Code for Python 
 
 Name: Pylance
 Id: ms-python.vscode-pylance
