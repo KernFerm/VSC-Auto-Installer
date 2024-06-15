@@ -7,6 +7,6 @@ currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-gets current version
+gets current version                 current
 
 if you have issues contact Visual Studio Code Support 
