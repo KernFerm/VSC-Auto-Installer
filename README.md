@@ -2,6 +2,10 @@
 
 This guide will help you understand how to use the `VisualStudioCode+Auto-Setup(Run_Admin).ps1` script.
 
+## how to download the repo first time users
+
+  - click link to read [**Instructions**](https://www.fnbubbles420.org/Instructions-On-How-To-Download-Repo)
+
 ## Prerequisites
 
 - You need to have PowerShell installed on your system. This is used to run the script.
