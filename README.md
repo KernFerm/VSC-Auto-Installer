@@ -31,7 +31,7 @@ This guide will help you understand how to use the `VisualStudioCode+Auto-Setup(
 ```
 .\VisualStudioCode+Auto-Setup(Run_Admin).ps1
 ```
-### if usage doesnt work use this first 
+### if usage doesnt work use this first run it then select `Y` thats it click enter then run the script again 
 ```
 Set-ExecutionPolicy Bypass -Scope Process
 ```
