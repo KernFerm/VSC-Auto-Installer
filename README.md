@@ -25,13 +25,24 @@ This guide will help you understand how to use the `VisualStudioCode+Auto-Setup(
 
 1. **Run as Administrator**: This script needs to be run as an administrator. Right-click on the script and select "Run as administrator".
 
-2. **Automatic Download**: The script automatically downloads the latest stable release of Visual Studio Code from the official website.
+2. `cd` the path of the **.ps1** into `powershell` in `admin mode`
 
-3. **Installation**: The script runs the installer with system-level installation. It uses the `/verysilent` and `/mergetasks=!runcode` arguments to install VS Code silently and without running the program after installation.
+```
+.\VisualStudioCode+Auto-Setup(Run_Admin).ps1
+```
+### if usage doesnt work use this first 
+```
+Set-ExecutionPolicy Bypass -Scope Process
+```
+then repeat the process you can leave powershell open in admin mode to do this you dont have to close it
 
-4. **Add to PATH**: The script adds the path to the VS Code executable to the system PATH, allowing you to run `code` from the command line.
+3. **Automatic Download**: The script automatically downloads the latest stable release of Visual Studio Code from the official website.
 
-5. **Cleanup**: The script removes the installer file after the installation is complete.
+4. **Installation**: The script runs the installer with system-level installation. It uses the `/verysilent` and `/mergetasks=!runcode` arguments to install VS Code silently and without running the program after installation.
+
+5. **Add to PATH**: The script adds the path to the VS Code executable to the system PATH, allowing you to run `code` from the command line.
+
+6. **Cleanup**: The script removes the installer file after the installation is complete.
 
 ## Note
 
