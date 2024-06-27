@@ -27,6 +27,7 @@ This guide will help you understand how to use the `VisualStudioCode+Auto-Setup(
 
 2. `cd` the path of the **.ps1** into `powershell` in `admin mode`
 
+## how to run
 ```
 .\VisualStudioCode+Auto-Setup(Run_Admin).ps1
 ```
