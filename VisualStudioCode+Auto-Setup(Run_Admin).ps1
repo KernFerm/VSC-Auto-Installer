@@ -25,13 +25,18 @@ $installerPath = "$env:TEMP\VSCodeSetup.exe"
 # Define the path to the VS Code executable
 $vsCodePath = "C:\Program Files\Microsoft VS Code\bin"
 
+# Define the path to the log file
+$logFilePath = "$env:TEMP\VSCodeInstallLog.txt"
+
 # Function to log messages
 function Log-Message {
     param (
         [string]$message
     )
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    Write-Host "$timestamp - $message"
+    $logEntry = "$timestamp - $message"
+    Write-Host $logEntry
+    Add-Content -Path $logFilePath -Value $logEntry
 }
 
 # Download the installer
