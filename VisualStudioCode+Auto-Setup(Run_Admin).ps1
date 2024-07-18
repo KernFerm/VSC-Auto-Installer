@@ -1,3 +1,21 @@
+# Function to check if the script is running as an administrator
+function Test-IsAdmin {
+    $currentUser = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
+    return $currentUser.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+}
+
+# Function to re-run the script with elevated privileges
+function Run-AsAdmin {
+    if (-not (Test-IsAdmin)) {
+        $scriptPath = $MyInvocation.MyCommand.Path
+        Start-Process powershell -ArgumentList "-File `"$scriptPath`"" -Verb RunAs
+        exit
+    }
+}
+
+# Check and re-run as admin if necessary
+Run-AsAdmin
+
 # Define the URL for the VS Code installer
 $url = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
 
