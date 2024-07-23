@@ -72,4 +72,30 @@ try {
     Log-Message "Failed to clean up the installer file: $_"
 }
 
+# Install VS Code extensions
+$extensions = @(
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "ms-python.debugpy"
+)
+
+function Install-VSCodeExtension {
+    param (
+        [string]$extension
+    )
+    Log-Message "Installing VS Code extension: $extension..."
+    try {
+        & "$vsCodePath\code" --install-extension $extension --force
+        Log-Message "Successfully installed extension: $extension."
+    } catch {
+        Log-Message "Failed to install extension: $extension. Error: $_"
+    }
+}
+
+foreach ($extension in $extensions) {
+    Install-VSCodeExtension -extension $extension
+}
+
+Log-Message "VS Code extensions installation completed."
+
 Log-Message "Visual Studio Code installation completed."
