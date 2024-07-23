@@ -47,22 +47,24 @@ function Log-Message {
 }
 ```
 
-Parameters
+1. Parameters
 - `message:` The message to be logged.
 
-Behavior
+2. Behavior
 - Adds a timestamp to each log entry.
 - Outputs the log entry to the console.
 - Appends the log entry to a specified log file.
 
 ## Log File Path
 - The log file is stored in the system's temporary directory and named `VSCodeInstallLog.txt.`
+
 ```
 $logFilePath = "$env:TEMP\VSCodeInstallLog.txt"
 ```
 
 ## Log Entries
 - Each log entry contains a timestamp and a message describing the current step of the script. For example:
+
 ```
 2024-07-18 12:00:00 - Downloading Visual Studio Code installer...
 2024-07-18 12:01:00 - Download completed.
@@ -77,6 +79,7 @@ $logFilePath = "$env:TEMP\VSCodeInstallLog.txt"
 
 ## Example Usage
 - Below is a snippet of how the `Log-Message` function is used within the script:
+
 ```
 Log-Message "Downloading Visual Studio Code installer..."
 try {
@@ -124,30 +127,24 @@ Log-Message "Visual Studio Code installation completed."
 
 ### Use For VSC PowerShell Script
 
-## Steps
+Steps
+1. **Run as Administrator:** This script needs to be run as an administrator. Right-click on the script and select "Run as administrator".
+2. **Navigate to the Script Location:** Open PowerShell in administrator mode and navigate to the directory where the script is located using the `cd` command.
 
-1. **Run as Administrator**: This script needs to be run as an administrator. Right-click on the script and select "Run as administrator".
+## How to Run
 
-2. `cd` the path of the **.ps1** into `powershell` in `admin mode`
+- 
 
-## how to run
-```
-.\VisualStudioCode+Auto-Setup(Run_Admin).ps1
-```
-### if usage doesnt work use this first run it then select `Y` thats it click enter then run the script again 
-```
-Set-ExecutionPolicy Bypass -Scope Process
-```
-then repeat the process you can leave powershell open in admin mode to do this you dont have to close it
 
-3. **Automatic Download**: The script automatically downloads the latest stable release of Visual Studio Code from the official website.
 
-4. **Installation**: The script runs the installer with system-level installation. It uses the `/verysilent` and `/mergetasks=!runcode` arguments to install VS Code silently and without running the program after installation.
 
-5. **Add to PATH**: The script adds the path to the VS Code executable to the system PATH, allowing you to run `code` from the command line.
 
-6. **Cleanup**: The script removes the installer file after the installation is complete.
 
-## Note
 
-- The script checks if the path to the VS Code executable already exists in the system PATH. If it does, it will not add it again.
+
+
+
+
+
+
+
