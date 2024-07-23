@@ -133,8 +133,11 @@ Steps
 
 ## How to Run
 
-- 
+1. Run the Script:
 
+```
+
+```
 
 
 
