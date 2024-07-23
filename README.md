@@ -136,17 +136,28 @@ Steps
 1. Run the Script:
 
 ```
+.\VisualStudioCode+Auto-Setup.ps1
+```
 
+2. If the Script Does Not Run:
+
+- Use the following command to change the execution policy, select `Y`, and then run the script again:
+
+```
+Set-ExecutionPolicy Bypass -Scope Process
+```
+
+3. After changing the execution policy, run the script again:
+
+```
+.\VisualStudioCode+Auto-Setup.ps1
 ```
 
 
-
-
-
-
-
-
-
+- **Automatic Download:** The script automatically downloads the latest stable release of Visual Studio Code from the official website.
+- **Installation:** The script runs the installer with user-level installation. It uses the `/verysilent` and `/mergetasks=!runcode` arguments to install VS Code silently and without running the program after installation.
+- **Add to PATH:** The script adds the path to the VS Code executable to the user PATH, allowing you to run `code` from the command line.
+- **Cleanup:** The script removes the installer file after the installation is complete.
 
 
 
