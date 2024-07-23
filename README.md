@@ -1,6 +1,6 @@
 # Visual Studio Code Auto Setup Guide
 
-This guide will help you understand how to use the `VisualStudioCode+Auto-Setup(Run_Admin).ps1` script.
+This guide will help you understand how to use the `VisualStudioCode+Auto-Setup.ps1` script.
 
 ## how to download the repo first time users
 
@@ -163,7 +163,7 @@ Log-Message "Visual Studio Code installation completed."
 ## How to Run
 
 ```
-.\install_vscode_user.ps1
+.\VisualStudioCode+Auto-Setup.ps1
 ```
 
 ### If the script does not run, use the following command to change the execution policy, select `Y`, and then run the script again:
@@ -175,7 +175,7 @@ Set-ExecutionPolicy Bypass -Scope Process
 - After changing the execution policy, run the script again:
 
 ```
-.\install_vscode_user.ps1
+.\VisualStudioCode+Auto-Setup.ps1
 ```
 
 1. **Automatic Download:** The script automatically downloads the latest stable release of Visual Studio Code from the official website.
