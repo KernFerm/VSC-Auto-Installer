@@ -14,8 +14,8 @@ This guide will help you understand how to use the `VisualStudioCode+Auto-Setup.
 # v7.4.4 Release of PowerShell - Latest (recommended)
       choose your recommended pc specs either 32bit or 64bit 
 
-    - For `64-bit systems`, download the `64-bit installer`: [Download 64-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/PowerShell-7.4.4-win-x64.msi)
-    - For `32-bit systems`, download the `32-bit installer`: [Download 32-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/PowerShell-7.4.4-win-x86.msi)
+- For `64-bit systems`, [Download 64-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/PowerShell-7.4.4-win-x64.msi)
+- For `32-bit systems`, [Download 32-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/PowerShell-7.4.4-win-x86.msi)
 
 ------
 
