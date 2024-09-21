@@ -56,7 +56,7 @@ function Log-Message {
 
 The log file is stored in the system's temporary directory as `VSCodeInstallLog.txt`.
 
-```powershell
+
 $logFilePath = "$env:TEMP\VSCodeInstallLog.txt"
 
 ### 📝 Log Entries
