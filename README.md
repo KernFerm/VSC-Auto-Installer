@@ -1,6 +1,14 @@
 # 💻 Visual Studio Code Auto Setup Guide
 
-This guide will help you understand how to use the `VisualStudioCode+Auto-Setup.ps1` script to automate the installation and configuration of **Visual Studio Code** on Windows 🪟.
+This guide provides detailed instructions on using the `VisualStudioCode+Auto-Setup.ps1` script to automate the installation and configuration of Visual Studio Code on Windows systems 🪟. Whether you're setting up a new machine or configuring multiple computers, this script simplifies the process by automating tasks that would otherwise be manual and time-consuming.
+
+The script automates several key tasks:
+- **Downloading and Installing Visual Studio Code**: It retrieves the latest stable version of Visual Studio Code directly from the official website and installs it on your system without any user intervention.
+- **Adding Visual Studio Code to the System PATH**: This ensures that you can run Visual Studio Code from any command line window by typing `code`.
+- **Extension Installation**: The script includes predefined extensions that are automatically installed, enhancing the functionality and integration of Visual Studio Code. These extensions support a wide range of development activities, including Python programming, container management, and AI-assisted coding.
+- **Configuration**: Any necessary configuration of Visual Studio Code settings to optimize performance or adhere to specific development standards can also be scripted.
+
+By automating these steps, the script not only saves time and effort but also ensures a consistent setup across different environments, making it ideal for both individual and organizational use.
 
 ---
 
