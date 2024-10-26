@@ -76,7 +76,21 @@ try {
 $extensions = @(
     "ms-python.vscode-pylance",
     "ms-python.python",
-    "ms-python.debugpy"
+    "ms-python.debugpy",
+    "ms-azuretools.vscode-docker",
+    "NilsSoderman.batch-runner",
+    "oven.bun-vscode",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "ms-vscode.live-server",
+    "ms-vscode-remote.remote-wsl",
+    "ms-vscode.vscode-speech",
+    "rust-lang.rust-analyzer",
+    "mechatroner.rainbow-csv",
+    "ms-vscode.powershell",
+    "ms-vscode-remote.remote-containers",
+    "GitHub.copilot",
+    "GitHub.copilot-chat"
 )
 
 function Install-VSCodeExtension {
