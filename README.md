@@ -12,7 +12,6 @@ Click the link to read [**Instructions**](https://www.gitprojects.fnbubbles420.o
 
 If you find this project useful, please give it a star! Your support is appreciated and helps keep the project growing. 🌟
 
-
 ---
 
 ## ⚙️ Prerequisites
@@ -50,19 +49,26 @@ function Log-Message {
     param (
         [string]$message
     )
-    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
     $logEntry = "$timestamp - $message"
+    
     Write-Host $logEntry
+    
+    $logFilePath = "path\to\your\logfile.log" # Define the log file path
     Add-Content -Path $logFilePath -Value $logEntry
 }
 ```
+
 
 ### 📝 Log File Path
 
 The log file is stored in the system's temporary directory as `VSCodeInstallLog.txt`.
 
+```
+$logFilePath = "$env:USERPROFILE\VSCodeInstallLog.txt"
+```
 
-$logFilePath = "$env:TEMP\VSCodeInstallLog.txt"
 
 ### 📝 Log Entries
 - Each log entry contains a `timestamp` and a description of the current step of the script. Example log entries:
@@ -81,6 +87,7 @@ Here’s how the Log-Message function is used within the script:
 
 ```
 Log-Message "Downloading Visual Studio Code installer..."
+
 try {
     Invoke-WebRequest -Uri $url -OutFile $installerPath -ErrorAction Stop
     Log-Message "Download completed."
@@ -89,6 +96,7 @@ try {
     exit 1
 }
 ```
+
 
 ### 🚀 Steps to Use the Script
 
@@ -110,12 +118,14 @@ To execute the script, run:
 ```
 Set-ExecutionPolicy Bypass -Scope Process
 ```
-- if message pops up click `Y` then enter
+
+- If a message pops up, click `Y` then enter.
 - Then, run the script again:
 
 ```
 .\VisualStudioCode+Auto-Setup.ps1
 ```
+
 
 ### 🛠️ Script Functionality
 
@@ -123,12 +133,7 @@ Set-ExecutionPolicy Bypass -Scope Process
 - **Silent Installation**: It runs the installer with silent arguments, allowing installation without user interaction.
 - **Add to PATH**: The script adds the VS Code executable to the user PATH, allowing you to run `code` from the command line.
 - **Cleanup**: After installation, the script removes the installer file to free up space.
-- **Extension Installation**: The script installs the following extensions for Python development:
-  - **Pylance** (`ms-python.vscode-pylance`)
-  - **Python** (`ms-python.python`)
-  - **Python Debugger** (`ms-python.debugpy`)
-
----
+- **Extension Installation**: The script installs an extensive list of extensions for enhanced development capabilities across multiple languages and tools.
 
 ### ⚠️ Notes
 
