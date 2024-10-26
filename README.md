@@ -27,10 +27,12 @@ If you find this project useful, please give it a star! Your support is apprecia
 - **PowerShell** must be installed on your system. You will use it to run the setup script.
 - Both MSIs are from the official GitHub page of [Official PowerShell GitHub](https://github.com/PowerShell).
 
-### 🔧 v7.4.5 Release of PowerShell (Latest Recommended Version)
+### 🔧 v7.4.6 Release of PowerShell - Latest (recommended)
 
-- For **Windows 64-bit systems**: [Download 64-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.5/PowerShell-7.4.5-win-x64.msi)
-- For **Windows 32-bit systems**: [Download 32-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.5/PowerShell-7.4.5-win-x86.msi)
+Select the version that matches your system specs:
+
+- For **Windows 64-bit systems**: [Download 64-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x64.msi)
+- For **Windows 32-bit systems**: [Download 32-Bit Installer](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x86.msi)
 
 ---
 
