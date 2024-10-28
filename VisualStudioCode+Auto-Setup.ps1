@@ -90,7 +90,16 @@ $extensions = @(
     "ms-vscode.powershell",
     "ms-vscode-remote.remote-containers",
     "GitHub.copilot",
-    "GitHub.copilot-chat"
+    "GitHub.copilot-chat",
+    "vscode-icons-team.vscode-icons",
+    "tomoki1207.pdf",
+    "redhat.vscode-xml",
+    "ms-dotnettools.vscode-dotnet-pack",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "ms-dotnettools.csharp",
+    "twxs.cmake",
+    "ms-vscode.cmake-tools",
+    "GitHub.vscode-pull-request-github"
 )
 
 function Install-VSCodeExtension {
