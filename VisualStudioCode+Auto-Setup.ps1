@@ -99,7 +99,14 @@ $extensions = @(
     "ms-dotnettools.csharp",
     "twxs.cmake",
     "ms-vscode.cmake-tools",
-    "GitHub.vscode-pull-request-github"
+    "GitHub.vscode-pull-request-github",
+    "vscjava.vscode-java-debug",
+    "vscjava.vscode-java-pack",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.js-debug-nightly",
+    "redhat.java",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-java-dependency"
 )
 
 function Install-VSCodeExtension {
